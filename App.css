@@ -1,0 +1,360 @@
+/* ==== 🌸 Trisha Shetty Portfolio Styles (White Modern Theme) ==== */
+
+/* 🌼 Base Styles */
+body {
+  background: #ffffff;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* 🔝 Navbar */
+.nav {
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  border-bottom: 1px solid #eee;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #2563eb;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #2563eb;
+}
+
+/* 🔹 About Section */
+.about-section {
+  background: #f8fafc;
+  padding: 40px 20px;
+  border-radius: 12px;
+  margin: 30px auto;
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+.about-photo {
+  width: 220px;               /* medium size */
+  height: auto;               /* maintain aspect ratio */
+  border-radius: 12px;        /* smooth corners */
+  border: 3px solid #2563eb;  /* neat blue border */
+  object-fit: contain;        /* full image visible */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  background-color: #ffffff;  /* clean background */
+  display: block;
+  padding: 4px;               /* small padding inside border */
+}
+
+/* ✅ Full image display with single clean border box */
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  color: #2563eb;
+  margin-bottom: 8px;
+}
+
+.about-text p {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.button-group {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s, color 0.3s;
+}
+
+.btn.primary {
+  background: #2563eb;
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background: #1e40af;
+}
+
+.btn.secondary {
+  background: #f3f4f6;
+  color: #2563eb;
+  border: 1px solid #2563eb;
+}
+
+.btn.secondary:hover {
+  background: #e0ecff;
+}
+
+/* 📚 Cards (Common Style for Sections) */
+.card {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 25px;
+  margin: 30px auto;
+  max-width: 1000px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+  color: #2563eb;
+  margin-bottom: 15px;
+}
+
+/* 📘 Education Table */
+.edu-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.edu-table th,
+.edu-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.edu-table th {
+  background-color: #2563eb;
+  color: white;
+  font-weight: 600;
+}
+
+.edu-table tr:hover {
+  background-color: #f1f5ff;
+}
+
+/* 💻 Skills */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-chip {
+  background: #e0ecff;
+  color: #2563eb;
+  border: 1px solid #2563eb;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-weight: 500;
+  cursor: default;
+  transition: background 0.3s;
+}
+
+.skill-chip:hover {
+  background: #2563eb;
+  color: #fff;
+}
+
+/* 🎯 Events & Hackathons */
+#events {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 25px;
+  margin: 30px auto;
+  max-width: 1000px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+#events h2 {
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  color: #555;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.event-item {
+  background: #ffffff;
+  border-left: 4px solid #2563eb;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+}
+
+.event-item h3 {
+  color: #1e40af;
+  margin-bottom: 5px;
+}
+
+.event-item p {
+  margin: 5px 0;
+  color: #444;
+}
+
+.muted {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* 🏅 Certificates */
+.cert-list {
+  list-style: none;
+  padding: 0;
+}
+
+.cert-list li {
+  margin: 10px 0;
+}
+
+.cert-list a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.cert-list a:hover {
+  text-decoration: underline;
+}
+
+/* 📞 Contact Section */
+.contact-section {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 40px 20px;
+  margin: 40px auto;
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.contact-info {
+  flex: 1;
+  background: linear-gradient(135deg, #6366f1, #2563eb);
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(37, 99, 235, 0.2);
+}
+
+.contact-info h3 {
+  color: #fff;
+}
+
+.contact-info p {
+  margin: 8px 0;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin: 6px 0;
+}
+
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  resize: none;
+}
+
+.contact-form button {
+  background-color: #2563eb;
+  color: white;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #1e40af;
+}
+
+/* 📄 Resume Section */
+.resume-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* ⚙️ Footer */
+.footer {
+  text-align: center;
+  color: #777;
+  margin: 30px 0;
+  font-size: 0.9rem;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-photo {
+    margin-bottom: 12px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contact-section {
+    flex-direction: column;
+  }
+
+  .button-group {
+    justify-content: center;
+  }
+}
